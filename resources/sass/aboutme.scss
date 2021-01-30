@@ -1,0 +1,827 @@
+/*laptop view*/
+
+
+@media screen and (min-width:769px) {
+
+    *{
+        margin:0;
+        padding: 0;
+        scroll-behavior: smooth;
+    }
+    
+    html,body{
+        
+        height:100%;
+        box-sizing: border-box;
+    }
+    
+    /*wrapper or page conatiner*/
+    
+    #wrapper{
+    margin: auto;
+    width:80%;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 0% 97% 3%;
+    box-sizing: border-box;
+    }
+    
+    .logo{
+    
+         width: 80px;
+         height: 80px;
+    }
+    
+    /*main block*/
+    
+    .main-block{
+    
+        display: grid;
+        grid-template-columns:13% 87%;
+    
+    }
+    
+    /*main-nav*/
+    
+    .main-block .main-nav{
+    
+        max-height: 100%;
+        width: 100%;
+        padding-top: 10px;
+        line-height: 1.2em;
+        background-color: #2f3742 ;
+        color: #3046fc;
+        font-family: Roboto;
+        text-align: center;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    
+    .main-nav ul {
+    
+        list-style: none;
+        
+    }
+    
+    .main-nav .current{
+    
+        color: white;
+        border-left: blue 5px solid;
+        padding-left: 5px;
+        box-sizing: border-box;
+        
+    }
+    
+    nav ul a{
+        
+        color:#3046fc; 
+        text-decoration: none;
+    
+    }
+    
+    nav ul a:hover{
+        
+        color: white;
+        
+    }
+    
+    
+    nav ul a:active{
+    
+        color: cyan;
+    }
+    
+    nav ul li{
+        padding: 10px;
+    }
+    
+    .main-block-aboutme{
+    
+        display: grid;
+        grid-template-rows: 9% 91%;
+        min-height: 100%;
+        color: black;
+        font-family: Roboto;
+        box-sizing: border-box;
+        
+    
+    }
+    
+    .main-block-aboutme .top-above{
+        
+        margin: auto;
+        text-align: center;
+        padding-top: 10px;
+        width: 25%;
+        box-sizing: border-box;
+        font-family: Rajdhani;
+        border:2px black solid;
+        background-color:#000033;
+        color:#777777;
+        height: 100%;
+        font-size: 13px; 
+    }
+    
+    
+    .main-block-aboutme .top-below{
+    
+        width: 100%;
+        min-height:100%;
+        box-sizing: border-box;
+        color:black;
+        background-color: #ffffff;
+    }
+    
+    .top-below {
+    
+        display: grid;
+        grid-template-columns: 30% 70%;
+    }
+    
+    
+    .TBright{
+    
+        display: grid;
+        grid-template-rows: 40% 60%;
+    }
+    
+    .rightA{
+    
+        display: grid;
+        grid-template-columns:50% 50%;
+    }
+    
+    .rightA .rightA1,.rightA .rightA2{
+    
+        display: grid;
+        grid-template-columns:20% 80%;
+    }
+    
+    .rightA11, .rightA21{
+        line-height: 3em;
+    }
+    
+    .rightA12, .rightA22{
+        line-height: 1.1em;
+        font-size: 16px;
+    }
+    
+    .TBleft {
+    
+    margin-right: auto;
+    margin-left: auto;
+    
+    }
+    
+    .TBleft .photo{
+        
+        padding: 15px 15px 0 38px;
+        width: 200px;
+        height: 300px;
+    }
+    
+    .titlepos{
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    
+    .TBright .icon{
+    
+        width:43px;
+        height: 47px;
+    
+    }
+    
+    .emailicon{
+    
+        width:47px;
+        height: 43px;
+    
+    }
+    
+    .TBright ul{
+    
+        list-style: none;
+        padding-left: 25px;
+        padding-top: 20px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    
+    .TBright .rightB{
+        padding:20px;
+        color: black;
+        font-family: Roboto;
+        text-align: justify;
+        box-sizing: border-box;
+        display: grid;
+        padding-bottom: 20px;
+    }
+    
+    .rightB .socialprofiles, .CBottomL .socialprofiles{
+    
+        width:38px;
+        height: 39px;
+        display: inline-block;
+        vertical-align: -13px;
+    
+    }
+    
+    
+    .rightB label{
+        
+        text-decoration: none;
+        padding-bottom: 10px;
+    }
+    
+    .rightB p{
+     margin-top:6%;
+    }
+    
+    .tothetop{
+        width: 100%;
+        height: 20%;
+        /*position: absolute;*/
+        box-sizing: border-box;
+    
+    }
+    
+    .tothetop .arrowhead{
+        width:30px;
+        height: 30px;
+        float:right;
+    }
+    
+    footer{
+        
+    background-color: #2f3742;
+        width: 100%;
+        color: white;
+        font-size:0.7em;
+        text-align: center;
+        font-style: italic;
+    }
+    
+    }
+    
+    
+    /*phone view*/
+    @media screen and (max-width:425px) {
+    
+    *{
+        margin:0;
+        padding: 0;
+        font-size: .9rem;
+        scroll-behavior: smooth;
+    }
+    
+    html,body{
+        
+        height:100%;
+        box-sizing: border-box;
+    }
+    
+    /*page wrapper or container*/
+    
+    #wrapper{
+    margin: auto;
+    width:100%;
+    /*height: 100%;*/
+    display: grid;
+    grid-template-rows: 0% 98% 2% ;
+    
+    }
+    
+    .logo{
+    
+         width: 50px;
+         height: 50px;
+         float: left;
+    }
+    
+    /*side navigation menu*/
+    
+    .main-block{
+        /*height: 100%;*/
+        display: grid;
+        /*grid-template-rows: 30% 70%;*/
+    }
+    
+    .main-nav{
+    
+        margin: 0;
+        padding: 3px;
+        padding-right: 20px;
+        line-height: 1.9em;
+        background-color: #2f3742 ;
+        color: #3046fc;
+        font-family: Roboto;
+        text-align: center;
+        font-weight: bold;
+        word-spacing: 2px;
+        display: grid;
+    }
+    
+    .main-nav ul #weblogo, .main-nav ul #myname{
+        line-height:1.0em;
+        padding-top: 10px;
+    
+    }
+    
+    .main-nav .current{
+    
+        color: white;
+        border-left: blue 5px solid;
+        padding-left: 5px;
+        box-sizing: border-box;
+        
+    }
+    
+    
+    .main-nav ul{
+    
+    
+        display: grid;
+        grid-template-columns:repeat(4,1fr);
+        grid-gap: 3px;
+        list-style: none;
+        padding-left: 25px;
+        float: right;
+        text-decoration-style: none;
+    
+    }
+    
+    
+    
+    
+    nav ul a{
+        
+        color:#3046fc;
+        text-decoration: none;
+    
+    
+    }
+    
+    nav ul a:hover{
+        
+        color: white;
+        
+    }
+    
+    
+    nav ul a:active{
+    
+        color: cyan;
+    }
+    
+    /*main-block-home*/
+    
+    .main-block-aboutme{
+        display: grid;
+        font-family: Roboto;
+        /*grid-template-rows: 15% auto;*/
+    }
+    .main-block-aboutme .top-above{
+    
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        /*padding-top: 10px;*/
+        width: 35%;
+        box-sizing: border-box;
+        font-family: Rajdhani;
+        border:2px black solid;
+        background-color:#000033;
+        color:#777777;
+        /*height: 15%; */
+        font-size: 20px;
+    }
+    
+    .main-block-aboutme .top-below{
+    
+        width: 100%;
+        /*height:85%;*/
+        box-sizing: border-box;
+        color:black;
+        background-color: #ffffff;
+    }
+    
+    .top-below {
+    
+        display: grid;
+    }
+    
+    .TBleft{
+        margin-left:auto;
+        margin-right: auto;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    
+    .TBleft .photo{
+    
+        margin: auto;
+        /*padding: auto;*/
+        width: 155px;
+        height: 230px;
+    }
+    
+    .titlepos{
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .TBright{
+    
+        display: grid;
+        }
+    
+    .rightA{
+    
+        display: grid;
+        }
+    
+    .rightA .rightA1,.rightA .rightA2{
+    
+        display: grid;
+        grid-template-columns:20% 80%;
+    }
+    
+    .rightA11, .rightA21{
+        box-sizing: border-box;
+        line-height: 3em;
+    }
+    
+    .rightA12, .rightA22{
+        line-height: 1.1em;
+        font-size: 16px;
+    }
+    
+    .TBright .icon{
+    
+        width:43px;
+        height: 47px;
+    
+    }
+    
+    .emailicon{
+    
+        width:47px;
+        height: 43px;
+    
+    }
+    
+    .TBright ul{
+    
+        list-style: none;
+        padding-left: 25px;
+        padding-top: 20px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    
+    .TBright .rightB{
+        padding:20px;
+        color: black;
+        font-family: Roboto;
+        text-align: justify;
+        box-sizing: border-box;
+        padding-bottom: 20px;
+    
+    }
+    
+    .rightB .socialprofiles, .CBottomL .socialprofiles{
+    
+        width:38px;
+        height: 39px;
+        display: inline-block;
+        vertical-align: -13px;
+    
+    }
+    
+    .rightB label{
+        
+        text-decoration: none;
+        padding-bottom: 10px;
+    }
+    
+    .rightB p{
+     margin-top:6%;
+    }
+    
+    .tothetop{
+        width: 100%;
+        height: 20%;
+        /*position: absolute;*/
+        box-sizing: border-box;
+    
+    }
+    
+    .tothetop .arrowhead{
+        width:30px;
+        height: 30px;
+        float:right;
+        bottom: 0;
+    }
+    
+    .arrowhead:hover , .arrowhead:focus{
+        cursor: pointer;
+    }
+    
+    
+    
+    footer{
+    
+    background-color: #2f3742;
+        width: 100%;
+        color: white;
+        font-size:0.7em;
+        text-align: center;
+        font-style: italic;
+    }
+    
+    
+    }
+    
+    /*tablet view*/
+    
+    @media screen and (min-width: 426px) and (max-width:768px) {
+    
+    *{
+        margin: 0;
+        padding: 0;
+        font-size: .9rem;
+        scroll-behavior: smooth;
+    }
+    
+    html,body{
+        
+        height:100%;
+        box-sizing: border-box;
+    }
+    
+    #wrapper{
+    
+    margin:auto;
+    width:80%;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 0% 97% 3%; 
+    box-sizing: border-box;
+    }
+    
+    .logo{
+    
+         width: 70px;
+         height: 70px;
+    }
+    
+    /*main block*/
+    
+    .main-block{
+    
+        display: grid;
+        grid-template-columns:14% 86%;
+        box-sizing: border-box;
+    }
+    
+    /*main-nav*/
+    
+    .main-block .main-nav{
+    
+        max-height: 100%;
+        width: 100%;
+        padding-top: 10px;
+        line-height: 1.2em;
+        background-color: #2f3742;
+        color: #3046fc;
+        font-family: Roboto;
+        text-align: center;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    
+    .main-nav .current{
+    
+        color: white;
+        border-left: blue 5px solid;
+        padding-left: 5px;
+        box-sizing: border-box;
+        
+    }
+    
+    .main-nav ul {
+    
+        list-style: none;
+        
+    }
+    
+    nav ul a{
+        
+        color:#3046fc;
+        text-decoration: none;
+    
+    }
+    
+    nav ul a:hover{
+        
+        color: white;
+        
+    }
+    
+    
+    nav ul a:active{
+    
+        color: cyan;
+    }
+    
+    nav ul li{
+        padding: 10px;
+    }
+    
+    
+    .main-block-aboutme{
+    
+        display: grid;
+        grid-template-rows: 9% 91%;
+        height: 100%;
+        color: black;
+        font-family: Roboto;
+        box-sizing: border-box;
+        
+    
+    }
+    
+    .main-block-aboutme .top-above{
+        
+        margin: auto;
+        text-align: center;
+        padding-top: 10px;
+        width: 20%;
+        box-sizing: border-box;
+        font-family: Rajdhani;
+        border:2px black solid;
+        background-color:#000033;
+        color:#777777;
+        height: 100%;
+        /*font-size:1.3rem; */
+    }
+    
+    
+    .main-block-aboutme .top-below{
+    
+        width: 100%;
+        height:100%;
+        box-sizing: border-box;
+        color:black;
+        background-color: #ffffff;
+    }
+    
+    .top-below {
+    
+        display: grid;
+        grid-template-columns: 30% 70%;
+    }
+    
+    
+    .TBright{
+    
+        display: grid;
+        grid-template-rows: 40% 60%;
+    }
+    
+    .rightA{
+    
+        display: grid;
+        grid-template-columns:50% 50%;
+    }
+    
+    .rightA .rightA1,.rightA .rightA2{
+    
+        display: grid;
+        grid-template-columns:20% 80%;
+    }
+    
+    .rightA11, .rightA21{
+        line-height: 3em;
+    }
+    
+    .rightA12, .rightA22{
+        line-height: 1.1em;
+        font-size: 16px;
+    }
+    
+    .TBleft .photo{
+        
+        padding: 15px 10px 0 38px;
+        width: 160px;
+        height: 240px;
+    }
+    .TBleft {
+    
+    margin-right: auto;
+    margin-left: auto;
+    
+    }
+    
+    /*.TBleft .photo{
+        
+        padding: 15px 15px 0 38px;
+        width: 200px;
+        height: 300px;
+    }*/
+    
+    .titlepos{
+        font-weight: bold;
+        text-align: center;
+    }
+    .TBright .icon{
+    
+        width:43px;
+        height: 47px;
+    
+    }
+    
+    .emailicon{
+    
+        width:45px;
+        height: 40px;
+    
+    }
+    
+    .TBright ul{
+    
+        list-style: none;
+        padding-left: 25px;
+        padding-top: 20px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    
+    .TBright .rightB{
+        padding:20px;
+        color: black;
+        font-family: Roboto;
+        text-align: justify;
+        box-sizing: border-box;
+        padding-bottom: 30px;
+        display: grid;
+    }
+    
+    .rightB .socialprofiles, .CBottomL .socialprofiles{
+    
+        width:38px;
+        height: 39px;
+        display: inline-block;
+        vertical-align: -13px;
+    
+    }
+    
+    .rightB label{
+        
+        text-decoration: none;
+        padding-bottom: 10px;
+    }
+    
+    
+    .rightB p{
+     margin-top:6%;
+    }
+    
+    .tothetop{
+        width: 100%;
+        height: 20%;
+        /*position: absolute;*/
+        box-sizing: border-box;
+    
+    }
+    
+    .tothetop .arrowhead{
+        width:30px;
+        height: 30px;
+        float:right;
+        bottom: 0;
+    }
+    
+    .arrowhead:hover , .arrowhead:focus{
+        cursor: pointer;
+    }
+    
+    footer{
+    
+    background-color: #2f3742;
+        width: 100%;
+        color: white;
+        font-size:0.7em;
+        text-align: center;
+        font-style: italic;
+    }
+    
+    }
+    
+    
+    

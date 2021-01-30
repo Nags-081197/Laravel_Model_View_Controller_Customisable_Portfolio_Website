@@ -1,0 +1,988 @@
+/*laptop view*/
+@media screen and (min-width:769px) {
+
+
+    *{
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+    }
+    
+    html,body{
+        
+        height:100%;
+        box-sizing: border-box;
+    }
+    
+    #wrapper{
+    
+    margin-left:auto;
+    margin-right: auto;
+    width:80%;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 0% 97% 3%; 
+    }
+    
+    .logo{
+    
+         width: 80px;
+         height: 80px;
+    }
+    
+    /*main block*/
+    
+    .main-block{
+    
+        display: grid;
+        grid-template-columns:13% 87%;
+    
+    }
+    
+    /*main-nav*/
+    
+    .main-block .main-nav{
+    
+        max-height: 100%;
+        width: 100%;
+        padding-top: 10px;
+        line-height: 1.2em;
+        background-color:  #2f3742;
+        color: #3046fc;
+        font-family: Roboto;
+        text-align: center;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    
+    .main-nav ul {
+    
+        list-style: none;
+        
+    }
+    
+    .main-nav .current{
+    
+        color: white;
+        border-left: blue 5px solid;
+        padding-left: 5px;
+        box-sizing: border-box;
+        
+    }
+    
+    nav ul a{
+        
+        color:#3046fc;
+        text-decoration: none;
+    
+    }
+    
+    nav ul a:hover{
+        
+        color: white;
+        
+    }
+    
+    
+    nav ul a:active{
+    
+        color: cyan;
+    }
+    
+    nav ul li{
+        padding: 10px;
+    }
+    
+    .main-block-skills{
+    
+        float: right;
+        /*width: 87%;*/
+        height: 100%;
+        color: black;
+        font-family: Roboto;
+        box-sizing: border-box;
+        display: grid;
+        /*grid-template-rows: 10% 50% 40%;*/
+        /*border:1px red solid;*/
+    }
+    
+    .STop{
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        /*padding-top: 10px;*/
+        width: 25%;
+        box-sizing: border-box;
+        font-family: Rajdhani;
+        border:2px black solid;
+        background-color:#000033;
+        color:#777777;
+        /*height: 15%; */
+        font-size: 10px;
+    }
+    
+    .SMiddle {
+        display: grid;
+        grid-template-columns:50% 50%;
+        /*border:1px blue solid;*/
+        box-sizing: border-box;
+        font-family: Roboto;
+        padding-bottom: 10px;
+    }
+    
+    .SMiddle .SMiddleL,.SMiddle .SMiddleR {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+    
+    .SMiddleL .skillcontainer,.SMiddleR .skillcontainer{
+    
+        box-sizing: border-box;
+        width: 100%;
+    
+    }
+    
+    .SMiddleL h3{
+        margin: 0;
+        padding:0;
+        text-transform: uppercase;
+        letter-spacing: .5px;
+        text-align: center;
+    }
+    
+    .SMiddleR h3{
+        margin: 0;
+        padding:0;
+        text-transform: uppercase;
+        letter-spacing: .5px;
+        text-align: center;
+    }
+    
+    .skillcontainer p{
+        text-transform: uppercase;
+        margin: 0 0 18px;
+        padding: 0;
+        font-weight: bold;
+        letter-spacing: 1px;
+        line-height: 1.4em;
+        position: relative;
+        top: 18px;
+    
+    }
+    
+    .skillcontainer p:nth-child(2)
+    {
+    
+        float: right;
+        position: relative;
+        top: -24px;
+    }
+    
+    .skill{
+    
+        background: #cccccc;
+        padding: 1px;
+        box-sizing: border-box;
+        /*border:0px black solid;*/
+    
+    }
+    
+    .skill_level11{
+    
+    background:	#66669B;
+    width: 0%;
+    height: 18px;
+    }
+    
+    .skill_level12{
+    
+    background:#669966;
+    width: 0%;
+    height: 18px;
+    }
+    
+    .skill_level13{
+    
+    background:#33ccff;
+    width: 0%;
+    height: 18px;
+    }
+    
+    .skill_level14{
+    
+    background:#ff6600;
+    width: 0%;
+    height: 18px;
+    }
+    
+    .skill_level21{
+    
+    background:#66669B;
+    width: 0%;
+    height: 18px;
+    }
+    
+    .skill_level22{
+    
+    background:#669966;
+    width: 0%;
+    height: 18px;
+    }
+    
+    .skill_level23{
+    
+    background:#33ccff;
+    width: 0%;
+    height: 18px;
+    }
+    
+    .skill_level24{
+    
+    background:#ff6600;
+    width: 0%;
+    height: 18px;
+    }
+    
+    .skillcontainer .Sicon{
+    
+        width:20px;
+        height: 21px;
+        padding-right: 10px;
+        vertical-align: -4px;
+    }
+    
+    .SBottom{
+    
+        width: 100%;
+        height: 100%;
+        margin:auto;
+    }
+    
+    .SBottom h3{
+        text-align: center;
+        font-family: Roboto;
+        padding-bottom: 8px;
+        padding-top: 10px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+     
+    .gaugecontainer {
+        text-align: center;
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+    
+    }
+    
+     .gaugecontainer .gauge{
+        
+        height: 160px;
+        width:280px;
+        box-sizing: border-box;
+    }
+    
+     .gaugecontainer p{
+         text-align: center;	
+        font-weight: bold;
+        font-size: 26px;
+        font-family: Roboto;
+        word-spacing: 200px;
+        box-sizing: border-box;
+        padding-bottom: 20px;
+    }
+    
+    .tothetop{
+        width: 100%;
+        height: 20%;
+        /*position: absolute;*/
+        box-sizing: border-box;
+    
+    }
+    
+    .tothetop .arrowhead{
+        width:30px;
+        height: 30px;
+        float:right;
+        padding-right: 20px; 
+    }
+    
+    footer{
+        background-color: #2f3742;
+        width: 100%;
+        color: white;
+        font-size:0.7em;
+        text-align: center;
+        font-style: italic;
+    }
+    
+    }
+    
+    
+    /*phone view*/
+    @media screen and (max-width:425px) {
+    
+    *{
+        margin:0;
+        padding: 0;
+        font-size: .9rem;
+        scroll-behavior: smooth;
+    }
+    
+    html,body{
+        
+        height:100%;
+        box-sizing: border-box;
+    
+    }
+    
+    /*page wrapper or container*/
+    
+    #wrapper{
+    margin: auto;
+    width:100%;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 0% 98% 2% ;
+    box-sizing: border-box;
+    
+    }
+    
+    .logo{
+    
+         width: 50px;
+         height: 50px;
+         float: left;
+    }
+    
+    /*side navigation menu*/
+    
+    .main-block{
+        /*height: 100%;*/
+        display: grid;
+        /*grid-template-rows: 30% 70%;*/
+    }
+    
+    .main-nav{
+    
+        margin: 0;
+        padding: 3px;
+        padding-right: 20px;
+        line-height: 1.9em;
+        background-color:  #2f3742;
+        color: #3046fc;
+        font-family: Roboto;
+        text-align: center;
+        font-weight: bold;
+        word-spacing: 2px;
+        display: grid;
+    }
+    
+    .main-nav ul #weblogo, .main-nav ul #myname{
+        line-height:1.0em;
+        padding-top: 10px;
+    
+    }
+    
+    .main-nav .current{
+    
+        color: white;
+        border-left: blue 5px solid;
+        padding-left: 5px;
+        box-sizing: border-box;
+        
+    }
+    
+    
+    .main-nav ul{
+    
+    
+        display: grid;
+        grid-template-columns:repeat(4,1fr);
+        grid-gap: 3px;
+        list-style: none;
+        padding-left: 25px;
+        float: right;
+        text-decoration-style: none;
+    
+    }
+    
+    
+    
+    
+    nav ul a{
+        
+        color:#3046fc ;
+        text-decoration: none;
+    
+    
+    }
+    
+    nav ul a:hover{
+        
+        color: white;
+        
+    }
+    
+    
+    nav ul a:active{
+    
+        color: cyan;
+    }
+    
+    .main-block-skills{
+    
+        float: right;
+        /*width: 87%;*/
+        height: 100%;
+        color: black;
+        font-family: Roboto;
+        box-sizing: border-box;
+        display: grid;
+        /*grid-template-rows: 10% 50% 40%;*/
+        /*border:1px red solid;*/
+    }
+    
+        
+    .STop{
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        /*padding-top: 10px;*/
+        width: 25%;
+        box-sizing: border-box;
+        font-family: Rajdhani;
+        border:2px black solid;
+        background-color:#000033;
+        color:#777777;
+        /*height: 15%; */
+        font-size: 10px;
+    }
+    
+    .SMiddle {
+        display: grid;
+        /*grid-template-columns:50% 50%;*/
+        /*border:1px blue solid;*/
+        box-sizing: border-box;
+        font-family: Roboto;
+        padding-bottom: 10px;
+    }
+    
+    .SMiddle .SMiddleL,.SMiddle .SMiddleR {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+    
+    .SMiddleL .skillcontainer,.SMiddleR .skillcontainer{
+    
+        box-sizing: border-box;
+        width: 100%;
+    
+    }
+    
+    .SMiddleL h3{
+        margin: 0;
+        padding:0;
+        text-transform: uppercase;
+        letter-spacing: .5px;
+        text-align: center;
+        text-decoration: underline;
+    }
+    
+    .SMiddleR h3{
+        margin: 0;
+        padding:0;
+        text-transform: uppercase;
+        letter-spacing: .5px;
+        text-align: center;
+        text-decoration: underline;
+    }
+    
+    .skillcontainer p{
+        text-transform: uppercase;
+        margin: 0 0 18px;
+        padding: 0;
+        font-weight: bold;
+        letter-spacing: 1px;
+        line-height: 1.4em;
+        position: relative;
+        top: 18px;
+    
+    }
+    
+    .skillcontainer p:nth-child(2)
+    {
+    
+        float: right;
+        position: relative;
+        top: -24px;
+    }
+    
+    .skill{
+    
+        background: #cccccc;
+        padding: 1px;
+        box-sizing: border-box;
+        /*border:0px black solid;*/
+    
+    }
+    
+    .skill_level11{
+    
+    background:	#66669B;
+    width: 0%;
+    height: 18px;
+    }
+    
+    .skill_level12{
+    
+    background:#669966;
+    width: 0%;
+    height: 18px;
+    }
+    
+    .skill_level13{
+    
+    background:#33ccff;
+    width: 0%;
+    height: 18px;
+    }
+    
+    .skill_level14{
+    
+    background:#ff6600;
+    width: 0%;
+    height: 18px;
+    }
+    
+    .skill_level21{
+    
+    background:#66669B;
+    width: 0%;
+    height: 18px;
+    }
+    
+    .skill_level22{
+    
+    background:#669966;
+    width: 0%;
+    height: 18px;
+    }
+    
+    .skill_level23{
+    
+    background:#33ccff;
+    width: 0%;
+    height: 18px;
+    }
+    
+    .skill_level24{
+    
+    background:#ff6600;
+    width: 0%;
+    height: 18px;
+    }
+    
+    .skillcontainer .Sicon{
+    
+        width:20px;
+        height: 21px;
+        padding-right: 10px;
+        vertical-align: -4px;
+    }
+    
+    .SBottom{
+    
+        width: 100%;
+        height: 100%;
+        margin:auto;
+    }
+    
+    .SBottom h3{
+        text-align: center;
+        font-family: Roboto;
+        padding-bottom: 8px;
+        padding-top: 10px;
+        font-weight: bold;
+        font-size: 20px;
+        text-decoration: underline;
+    }
+     
+    .gaugecontainer {
+        text-align: center;
+        display: grid;
+        /*grid-template-columns: 33.3% 33.3% 33.3%;*/
+    
+    }
+    
+     .gaugecontainer .gauge{
+        
+        height: 160px;
+        width:280px;
+        box-sizing: border-box;
+    }
+    
+     .gaugecontainer p{
+         text-align: center;	
+        font-weight: bold;
+        font-size: 26px;
+        font-family: Roboto;
+        word-spacing: 200px;
+        box-sizing: border-box;
+        padding-bottom: 20px;
+    }
+    
+    .tothetop{
+        width: 100%;
+        height: 20%;
+        /*position: absolute;*/
+        box-sizing: border-box;
+    
+    }
+    
+    .tothetop .arrowhead{
+        width:30px;
+        height: 30px;
+        float:right;
+        padding-right: 20px; 
+    }
+    
+    footer{
+        background-color: #2f3742;
+        width: 100%;
+        color: white;
+        font-size:0.7em;
+        text-align: center;
+        font-style: italic;
+    }
+    
+    }
+    
+    /*tablet view*/
+    
+    @media screen and (min-width:426px) and (max-width: 768px) {
+    
+    
+    *{
+        margin: 0;
+        padding: 0;
+        font-size: .9rem;
+        scroll-behavior: smooth;
+    
+    }
+    
+    html,body{
+        
+        height:100%;
+        box-sizing: border-box;
+    }
+    
+    #wrapper{
+    
+    margin:auto;
+    width:80%;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 0% 97% 3%;
+    box-sizing: border-box; 
+    }
+    
+    .logo{
+    
+         width: 70px;
+         height: 70px;
+    }
+    
+    /*main block*/
+    
+    .main-block{
+    
+        display: grid;
+        grid-template-columns:14% 86%;
+    
+    }
+    
+    /*main-nav*/
+    
+    .main-block .main-nav{
+    
+        max-height: 100%;
+        width: 100%;
+        padding-top: 10px;
+        line-height: 1.2em;
+        background-color:  #2f3742;
+        color: #3046fc;
+        font-family: Roboto;
+        text-align: center;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    
+    .main-nav ul {
+    
+        list-style: none;
+        
+    }
+    
+    .main-nav .current{
+    
+        color: white;
+        border-left: blue 5px solid;
+        padding-left: 5px;
+        box-sizing: border-box;
+        
+    }
+    
+    nav ul a{
+        
+        color:#3046fc;
+        text-decoration: none;
+    
+    }
+    
+    nav ul a:hover{
+        
+        color: white;
+        
+    }
+    
+    
+    nav ul a:active{
+    
+        color: cyan;
+    }
+    
+    nav ul li{
+        padding: 10px;
+    }
+    
+    .main-block-skills{
+    
+        float: right;
+        /*width: 87%;*/
+        height: 100%;
+        color: black;
+        font-family: Roboto;
+        box-sizing: border-box;
+        display: grid;
+        /*grid-template-rows: 10% 50% 40%;*/
+        /*border:1px red solid;*/
+    }
+    
+    .STop{
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        /*padding-top: 10px;*/
+        width: 25%;
+        box-sizing: border-box;
+        font-family: Rajdhani;
+        border:2px black solid;
+        background-color:#000033;
+        color:#777777;
+        /*height: 15%; */
+        font-size: 10px;
+    }
+    
+    .SMiddle {
+        display: grid;
+        /*grid-template-columns:50% 50%;*/
+        /*border:1px blue solid;*/
+        box-sizing: border-box;
+        font-family: Roboto;
+        padding-bottom: 10px;
+    }
+    
+    .SMiddle .SMiddleL,.SMiddle .SMiddleR {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+    
+    .SMiddleL .skillcontainer,.SMiddleR .skillcontainer{
+    
+        box-sizing: border-box;
+        width: 100%;
+    
+    }
+    
+    .SMiddleL h3{
+        margin: 0;
+        padding:0;
+        text-transform: uppercase;
+        letter-spacing: .5px;
+        text-align: center;
+    }
+    
+    .SMiddleR h3{
+        margin: 0;
+        padding:0;
+        text-transform: uppercase;
+        letter-spacing: .5px;
+        text-align: center;
+    }
+    
+    .skillcontainer p{
+        text-transform: uppercase;
+        margin: 0 0 18px;
+        padding: 0;
+        font-weight: bold;
+        letter-spacing: 1px;
+        line-height: 1.4em;
+        position: relative;
+        top: 18px;
+    
+    }
+    
+    .skillcontainer p:nth-child(2)
+    {
+    
+        float: right;
+        position: relative;
+        top: -24px;
+    }
+    
+    .skill{
+    
+        background: #cccccc;
+        padding: 1px;
+        box-sizing: border-box;
+        /*border:0px black solid;*/
+    
+    }
+    
+    .skill_level11{
+    
+    background:	#66669B;
+    width: 0%;
+    height: 18px;
+    }
+    
+    .skill_level12{
+    
+    background:#669966;
+    width: 0%;
+    height: 18px;
+    }
+    
+    .skill_level13{
+    
+    background:#33ccff;
+    width: 0%;
+    height: 18px;
+    }
+    
+    .skill_level14{
+    
+    background:#ff6600;
+    width: 0%;
+    height: 18px;
+    }
+    
+    .skill_level21{
+    
+    background:#66669B;
+    width: 0%;
+    height: 18px;
+    }
+    
+    .skill_level22{
+    
+    background:#669966;
+    width: 0%;
+    height: 18px;
+    }
+    
+    .skill_level23{
+    
+    background:#33ccff;
+    width: 0%;
+    height: 18px;
+    }
+    
+    .skill_level24{
+    
+    background:#ff6600;
+    width: 0%;
+    height: 18px;
+    }
+    
+    .skillcontainer .Sicon{
+    
+        width:20px;
+        height: 21px;
+        padding-right: 10px;
+        vertical-align: -4px;
+    }
+    
+    .SBottom{
+    
+        width: 100%;
+        height: 100%;
+        margin:auto;
+    }
+    
+    .SBottom h3{
+        text-align: center;
+        font-family: Roboto;
+        padding-bottom: 8px;
+        padding-top: 10px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+     
+    .gaugecontainer {
+        text-align: center;
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+    
+    }
+    
+     .gaugecontainer .gauge{
+        
+        height: 160px;
+        width:280px;
+        box-sizing: border-box;
+    }
+    
+     .gaugecontainer p{
+         text-align: center;	
+        font-weight: bold;
+        font-size: 26px;
+        font-family: Roboto;
+        word-spacing: 200px;
+        box-sizing: border-box;
+        padding-bottom: 20px;
+    }
+    
+    .tothetop{
+        width: 100%;
+        height: 20%;
+        /*position: absolute;*/
+        box-sizing: border-box;
+    
+    }
+    
+    .tothetop .arrowhead{
+        width:30px;
+        height: 30px;
+        float:right;
+        padding-right: 20px; 
+    }
+    
+    
+    footer{
+        background-color: #2f3742;
+        width: 100%;
+        color: white;
+        font-size:0.7em;
+        text-align: center;
+        font-style: italic;
+    }
+    
+    }
+    
